@@ -1,26 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PolitiGPT - Democracy's digital companion</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Permanent+Marker&display=swap"
-    rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .bg-image {
+      background-image: url('politigpt.png');
+      height: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+    }
+
+    .text {
+      position: absolute;
+      top: 65%;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      transform: translateY(-50%);
+      color: black;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.75);
+      /* 50% transparent white */
+    }
+  </style>
 </head>
 
 <body style="background-color: #0A92E1;">
-  <center><img src="politigpt.png"><br><br>
-    <font face="Comic Neue" color="white" size="60pt"><strong>PolitiGPT</strong></font><br>
-    <font face="Comic Neue" color="white" size="40pt">Democracy's Digital Companion</font><br>
-    <font face="Comic Neue" color="white" size="30pt"><a href="https://www.x.com/PolitiGPT"
-        style="text-decoration: none; color: white;">x.com/PolitiGPT</a> 🗳️ Custom GPT (soon)</font>
-  </center>
-
+  <div class="bg-image">
+    <div class="text">
+      <h1>PolitiGPT</h1>
+      <p>Democracy's Digital Companion</p>
+      <p><a href="https://www.x.com/PolitiGPT" style="text-decoration: none; color: black;">x.com/PolitiGPT</a> 🗳️
+        Custom GPT (soon)
+      </p>
+    </div>
+  </div>
 </body>
 
 </html>
